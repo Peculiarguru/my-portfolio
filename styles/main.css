@@ -1,0 +1,116 @@
+header {
+  width: 100%;
+}
+header .navbar {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+  padding-right: 20px;
+  background: linear-gradient(193deg, rgb(37, 109, 133) 5%, rgb(6, 40, 61) 35%, rgb(6, 40, 61) 66%);
+}
+header .navbar .navbar-brand {
+  font-family: "Tangerine", cursive;
+  font-size: 2rem;
+  color: #00abb3;
+  font-size: 40px;
+}
+header .navbar .nav-link {
+  color: white;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+}
+header .navbar .nav-link:hover {
+  color: #8bbccc;
+}
+header .fa-solid {
+  font-size: 2rem;
+  color: white;
+}
+header .offcanvas {
+  background: linear-gradient(193deg, rgb(37, 109, 133) 5%, rgb(6, 40, 61) 35%, rgb(6, 40, 61) 66%);
+}
+
+article {
+  min-height: 100vh;
+  background-color: white;
+  color: white;
+}
+article .about-me-container {
+  background-color: #06283d;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 60% 90%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 60% 90%, 0 100%);
+  position: relative;
+}
+article .about-me-container .about-me {
+  position: absolute;
+  top: 80px;
+  left: 0;
+}
+article .about-me-container .about-me .img-style {
+  border: 5px solid white;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+article .about-me-container .about-me .img-style img {
+  width: 100%;
+}
+
+@media all and (max-width: 768px) {
+  .about-me-container {
+    height: auto;
+  }
+}
+@media all and (min-width: 768px) {
+  .about-me-container {
+    height: 600px;
+  }
+}
+.bubble-animation-container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 0;
+}
+.bubble-animation-container .bubble-animation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.bubble-animation-container .bubble-animation div {
+  width: 5px;
+  height: 5px;
+  background: #b6eada;
+  border-radius: 50%;
+  -webkit-animation: animate 15s linear infinite;
+          animation: animate 15s linear infinite;
+  -webkit-animation-duration: calc(125s / var(--i));
+          animation-duration: calc(125s / var(--i));
+}
+
+.bubble-animation div:nth-child(even) {
+  background: #5b8fb9;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    transform: translateY(150vh);
+  }
+  100% {
+    transform: translateY(-10vh);
+  }
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(150vh);
+  }
+  100% {
+    transform: translateY(-10vh);
+  }
+}/*# sourceMappingURL=main.css.map */

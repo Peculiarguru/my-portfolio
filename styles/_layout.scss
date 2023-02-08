@@ -1,0 +1,39 @@
+article {
+  min-height: 100vh;
+  background-color: white;
+  color: white;
+
+  .about-me-container {
+    background-color: #06283d;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 60% 90%, 0 100%);
+    position: relative;
+
+    .about-me {
+      position: absolute;
+      top: 80px;
+      left: 0;
+      .img-style {
+        border: 5px solid white;
+        width: 300px;
+        height: 300px;
+        overflow: hidden;
+        object-fit: cover;
+        border-radius: 50%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  .about-me-container {
+    height: auto;
+  }
+}
+@media all and (min-width: 768px) {
+  .about-me-container {
+    height: 600px;
+  }
+}
