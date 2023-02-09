@@ -1,3 +1,40 @@
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+.btn-container a {
+  text-decoration: none;
+  color: #00abb3;
+  background-color: transparent;
+  width: 130px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30%;
+  border: 4px solid #00abb3;
+}
+.btn-container a:hover {
+  background-color: #00abb3;
+  color: white;
+}
+
+a,
+i {
+  color: white;
+  transition: transform 2s ease-in-out;
+}
+
+i:hover {
+  transform: scale(1.3);
+}
+
+i {
+  padding-left: 20px;
+  font-size: 1.6rem;
+  color: #00abb3;
+}
+
 header {
   width: 100%;
 }
@@ -11,7 +48,7 @@ header .navbar {
   background: linear-gradient(193deg, rgb(37, 109, 133) 5%, rgb(6, 40, 61) 35%, rgb(6, 40, 61) 66%);
 }
 header .navbar .navbar-brand {
-  font-family: "Tangerine", cursive;
+  font-family: "Babylonica", cursive;
   font-size: 2rem;
   color: #00abb3;
   font-size: 40px;
@@ -31,11 +68,16 @@ header .fa-solid {
 header .offcanvas {
   background: linear-gradient(193deg, rgb(37, 109, 133) 5%, rgb(6, 40, 61) 35%, rgb(6, 40, 61) 66%);
 }
+header .navbar-toggler:focus {
+  outline: 1px dashed #8bbccc;
+  box-shadow: none;
+}
 
 article {
   min-height: 100vh;
   background-color: white;
   color: white;
+  font-family: "Poppins", sans-serif;
 }
 article .about-me-container {
   background-color: #06283d;
@@ -60,7 +102,9 @@ article .about-me-container .about-me .img-style {
 article .about-me-container .about-me .img-style img {
   width: 100%;
 }
-
+article .personal {
+  background: linear-gradient(160deg, #06283d 50%, #ebf2f7 50%);
+}
 @media all and (max-width: 768px) {
   .about-me-container {
     height: auto;
@@ -68,7 +112,7 @@ article .about-me-container .about-me .img-style img {
 }
 @media all and (min-width: 768px) {
   .about-me-container {
-    height: 600px;
+    height: 700px;
   }
 }
 .bubble-animation-container {

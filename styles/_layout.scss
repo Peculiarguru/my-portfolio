@@ -2,6 +2,7 @@ article {
   min-height: 100vh;
   background-color: white;
   color: white;
+  font-family: $primary-font-family;
 
   .about-me-container {
     background-color: #06283d;
@@ -13,7 +14,7 @@ article {
       top: 80px;
       left: 0;
       .img-style {
-        border: 5px solid white;
+        border: 5px solid $white;
         width: 300px;
         height: 300px;
         overflow: hidden;
@@ -25,6 +26,11 @@ article {
       }
     }
   }
+  .personal {
+    background: linear-gradient(160deg, #06283d 50%, #ebf2f7 50%);
+  }
+  .my-social-icon {
+  }
 }
 
 @media all and (max-width: 768px) {
@@ -34,6 +40,6 @@ article {
 }
 @media all and (min-width: 768px) {
   .about-me-container {
-    height: 600px;
+    height: 700px;
   }
 }

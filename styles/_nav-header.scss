@@ -7,25 +7,20 @@ header {
     width: 100%;
     z-index: 5;
     padding-right: 20px;
-    background: linear-gradient(
-      193deg,
-      rgba(37, 109, 133, 1) 5%,
-      rgba(6, 40, 61, 1) 35%,
-      rgba(6, 40, 61, 1) 66%
-    );
+    background: $gradient-bg;
     .navbar-brand {
-      font-family: "Tangerine", cursive;
+      font-family: $secondary-font-family;
       font-size: 2rem;
-      color: #00abb3;
+      color: $secondary;
       font-size: 40px;
     }
     .nav-link {
       color: white;
       font-size: 1.2rem;
-      font-family: "Poppins", sans-serif;
+      font-family: $primary-font-family;
     }
     .nav-link:hover {
-      color: #8bbccc;
+      color: $hoverColor;
     }
   }
   .fa-solid {
@@ -33,12 +28,11 @@ header {
     color: white;
   }
   .offcanvas {
-    background: linear-gradient(
-      193deg,
-      rgba(37, 109, 133, 1) 5%,
-      rgba(6, 40, 61, 1) 35%,
-      rgba(6, 40, 61, 1) 66%
-    );
+    background: $gradient-bg;
+  }
+  .navbar-toggler:focus {
+    outline: 1px dashed $hoverColor;
+    box-shadow: none;
   }
 }
 
