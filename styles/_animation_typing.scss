@@ -1,0 +1,65 @@
+.typing-wrapper {
+  // margin-left: 15px;
+  height: 40px;
+  overflow: hidden;
+}
+@keyframes slide {
+  0% {
+    top: 0;
+  }
+  25% {
+    top: 0;
+  }
+  26% {
+    top: -55px;
+  }
+  50% {
+    top: -55px;
+  }
+  51% {
+    top: -105px;
+  }
+  75% {
+    top: -105px;
+  }
+  76% {
+    top: -155px;
+  }
+  100% {
+    top: -155px;
+  }
+}
+@keyframes typing {
+  40%,
+  60% {
+    left: calc(100% + 10px);
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.typing-wrapper p {
+  color: #fc6d6d;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.typing-wrapper .content {
+  animation: slide 24s infinite;
+  position: relative;
+  top: 0;
+}
+
+.typing-wrapper .content::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  border-left: 2px solid #fc6d6d;
+  animation: typing 6s steps(10) infinite;
+  z-index: 2;
+}

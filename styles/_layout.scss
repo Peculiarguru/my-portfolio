@@ -4,12 +4,12 @@ article {
   color: white;
   font-family: $primary-font-family;
 
-  .about-me-container {
+  .banner-container {
     background-color: #06283d;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 60% 90%, 0 100%);
     position: relative;
 
-    .about-me {
+    .introduction {
       position: absolute;
       top: 80px;
       left: 0;
@@ -24,22 +24,31 @@ article {
           width: 100%;
         }
       }
+      .my-role {
+        color: $secondary;
+      }
     }
   }
-  .personal {
+  .persona-details {
     background: linear-gradient(160deg, #06283d 50%, #ebf2f7 50%);
   }
-  .my-social-icon {
+
+  .about-me-container {
+    color: #06283d;
+  }
+  .skills-container {
+    background: $gradient-bg;
+    height: 400px;
   }
 }
 
 @media all and (max-width: 768px) {
-  .about-me-container {
+  .banner-container {
     height: auto;
   }
 }
 @media all and (min-width: 768px) {
-  .about-me-container {
+  .banner-container {
     height: 700px;
   }
 }

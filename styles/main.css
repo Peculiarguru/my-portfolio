@@ -79,18 +79,18 @@ article {
   color: white;
   font-family: "Poppins", sans-serif;
 }
-article .about-me-container {
+article .banner-container {
   background-color: #06283d;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 60% 90%, 0 100%);
           clip-path: polygon(0 0, 100% 0, 100% 100%, 60% 90%, 0 100%);
   position: relative;
 }
-article .about-me-container .about-me {
+article .banner-container .introduction {
   position: absolute;
   top: 80px;
   left: 0;
 }
-article .about-me-container .about-me .img-style {
+article .banner-container .introduction .img-style {
   border: 5px solid white;
   width: 300px;
   height: 300px;
@@ -99,19 +99,30 @@ article .about-me-container .about-me .img-style {
      object-fit: cover;
   border-radius: 50%;
 }
-article .about-me-container .about-me .img-style img {
+article .banner-container .introduction .img-style img {
   width: 100%;
 }
-article .personal {
+article .banner-container .introduction .my-role {
+  color: #00abb3;
+}
+article .persona-details {
   background: linear-gradient(160deg, #06283d 50%, #ebf2f7 50%);
 }
+article .about-me-container {
+  color: #06283d;
+}
+article .skills-container {
+  background: linear-gradient(193deg, rgb(37, 109, 133) 5%, rgb(6, 40, 61) 35%, rgb(6, 40, 61) 66%);
+  height: 400px;
+}
+
 @media all and (max-width: 768px) {
-  .about-me-container {
+  .banner-container {
     height: auto;
   }
 }
 @media all and (min-width: 768px) {
-  .about-me-container {
+  .banner-container {
     height: 700px;
   }
 }
@@ -157,4 +168,104 @@ article .personal {
   100% {
     transform: translateY(-10vh);
   }
+}
+.typing-wrapper {
+  height: 40px;
+  overflow: hidden;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    top: 0;
+  }
+  25% {
+    top: 0;
+  }
+  26% {
+    top: -55px;
+  }
+  50% {
+    top: -55px;
+  }
+  51% {
+    top: -105px;
+  }
+  75% {
+    top: -105px;
+  }
+  76% {
+    top: -155px;
+  }
+  100% {
+    top: -155px;
+  }
+}
+
+@keyframes slide {
+  0% {
+    top: 0;
+  }
+  25% {
+    top: 0;
+  }
+  26% {
+    top: -55px;
+  }
+  50% {
+    top: -55px;
+  }
+  51% {
+    top: -105px;
+  }
+  75% {
+    top: -105px;
+  }
+  76% {
+    top: -155px;
+  }
+  100% {
+    top: -155px;
+  }
+}
+@-webkit-keyframes typing {
+  40%, 60% {
+    left: calc(100% + 10px);
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes typing {
+  40%, 60% {
+    left: calc(100% + 10px);
+  }
+  100% {
+    left: 0;
+  }
+}
+.typing-wrapper p {
+  color: #fc6d6d;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.typing-wrapper .content {
+  -webkit-animation: slide 24s infinite;
+          animation: slide 24s infinite;
+  position: relative;
+  top: 0;
+}
+
+.typing-wrapper .content::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  border-left: 2px solid #fc6d6d;
+  -webkit-animation: typing 6s steps(10) infinite;
+          animation: typing 6s steps(10) infinite;
+  z-index: 2;
 }/*# sourceMappingURL=main.css.map */
