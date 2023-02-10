@@ -123,6 +123,7 @@ article .skills-container {
   background: linear-gradient(193deg, rgb(37, 109, 133) 5%, rgb(6, 40, 61) 35%, rgb(6, 40, 61) 66%);
   padding-top: 30px;
   height: auto;
+  padding-bottom: 30px;
 }
 article .skills-container .box-style {
   height: 140px;
@@ -178,6 +179,24 @@ article .skills-container .box6 i {
 
 .box-style:hover {
   transform: scale(1.1);
+}
+
+.projects-container {
+  background: linear-gradient(193deg, rgb(37, 109, 133) 5%, rgb(6, 40, 61) 35%, rgb(6, 40, 61) 66%);
+}
+.projects-container .project-sub-container {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.projects-container .project-demo {
+  width: 270px;
+  height: 250px;
+}
+.projects-container .project-demo img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
 }
 
 @media all and (max-width: 768px) {
