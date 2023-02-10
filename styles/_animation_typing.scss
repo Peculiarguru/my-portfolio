@@ -1,6 +1,5 @@
 .typing-wrapper {
-  // margin-left: 15px;
-  height: 40px;
+  height: 37px;
   overflow: hidden;
 }
 @keyframes slide {
@@ -40,9 +39,10 @@
 }
 
 .typing-wrapper p {
-  color: #fc6d6d;
+  color: $secondary;
   font-size: 24px;
-  font-weight: 500;
+  letter-spacing: 5px;
+  text-align: center;
 }
 
 .typing-wrapper .content {
@@ -59,7 +59,7 @@
   height: 100%;
   width: 100%;
   background: #fff;
-  border-left: 2px solid #fc6d6d;
+  border-left: 2px solid $secondary;
   animation: typing 6s steps(10) infinite;
   z-index: 2;
 }

@@ -60,6 +60,10 @@ header .navbar .nav-link {
 }
 header .navbar .nav-link:hover {
   color: #8bbccc;
+  border-bottom: 2px solid #00abb3;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 header .fa-solid {
   font-size: 2rem;
@@ -111,9 +115,69 @@ article .persona-details {
 article .about-me-container {
   color: #06283d;
 }
+article .about-me-container h4 {
+  color: #06283d;
+  padding-top: 10px;
+}
 article .skills-container {
   background: linear-gradient(193deg, rgb(37, 109, 133) 5%, rgb(6, 40, 61) 35%, rgb(6, 40, 61) 66%);
-  height: 400px;
+  padding-top: 30px;
+  height: auto;
+}
+article .skills-container .box-style {
+  height: 140px;
+  max-width: 200px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 4px;
+  margin-left: 30px;
+  margin-bottom: 25px;
+  transition: transform 1s ease-in-out;
+}
+article .skills-container .box-style i {
+  font-size: 4rem;
+}
+article .skills-container .box1 {
+  box-shadow: 0 2px 3px 3px #f69253;
+}
+article .skills-container .box1 i {
+  color: #f69253;
+}
+article .skills-container .box4 {
+  box-shadow: 0 2px 3px 3px #9c6ff6;
+}
+article .skills-container .box4 i {
+  color: #9c6ff6;
+}
+article .skills-container .box2 {
+  box-shadow: 0 2px 3px 3px #5f9df7;
+}
+article .skills-container .box2 i {
+  color: #5f9df7;
+}
+article .skills-container .box3 {
+  box-shadow: 0 2px 3px 3px #4b56d2;
+}
+article .skills-container .box3 i {
+  color: white;
+}
+article .skills-container .box5 {
+  box-shadow: 0 2px 3px 3px #f9f54b;
+}
+article .skills-container .box5 i {
+  color: #f9f54b;
+}
+article .skills-container .box6 {
+  box-shadow: 0 2px 3px 3px #f1f6f5;
+}
+article .skills-container .box6 i {
+  color: #f1f6f5;
+}
+
+.box-style:hover {
+  transform: scale(1.1);
 }
 
 @media all and (max-width: 768px) {
@@ -124,6 +188,9 @@ article .skills-container {
 @media all and (min-width: 768px) {
   .banner-container {
     height: 700px;
+  }
+  .skills-container {
+    min-height: 400px;
   }
 }
 .bubble-animation-container {
@@ -170,7 +237,7 @@ article .skills-container {
   }
 }
 .typing-wrapper {
-  height: 40px;
+  height: 37px;
   overflow: hidden;
 }
 
@@ -244,9 +311,10 @@ article .skills-container {
   }
 }
 .typing-wrapper p {
-  color: #fc6d6d;
+  color: #00abb3;
   font-size: 24px;
-  font-weight: 500;
+  letter-spacing: 5px;
+  text-align: center;
 }
 
 .typing-wrapper .content {
@@ -264,7 +332,7 @@ article .skills-container {
   height: 100%;
   width: 100%;
   background: #fff;
-  border-left: 2px solid #fc6d6d;
+  border-left: 2px solid #00abb3;
   -webkit-animation: typing 6s steps(10) infinite;
           animation: typing 6s steps(10) infinite;
   z-index: 2;
