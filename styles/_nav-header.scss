@@ -1,0 +1,39 @@
+header {
+  width: 100%;
+  .navbar {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+    padding-right: 20px;
+    background: $gradient-bg;
+    .navbar-brand {
+      font-family: $secondary-font-family;
+      font-size: 2rem;
+      color: $secondary;
+      font-size: 40px;
+    }
+    .nav-link {
+      color: white;
+      font-size: 1.2rem;
+      font-family: $primary-font-family;
+    }
+    .nav-link:hover {
+      color: $hoverColor;
+      border-bottom: 2px solid $secondary;
+      width: fit-content;
+    }
+  }
+  .fa-solid {
+    font-size: 2rem;
+    color: white;
+  }
+  .offcanvas {
+    background: $gradient-bg;
+  }
+  .navbar-toggler:focus {
+    outline: 1px dashed $hoverColor;
+    box-shadow: none;
+  }
+}
