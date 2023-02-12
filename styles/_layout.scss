@@ -1,7 +1,7 @@
 article {
   min-height: 100vh;
-  background-color: white;
-  color: white;
+  background-color: $white;
+  color: $white;
   font-family: $primary-font-family;
   .badge {
     h4 {
@@ -39,9 +39,9 @@ article {
   }
 
   .about-me-container {
-    color: #06283d;
+    color: $dark;
     h4 {
-      color: #06283d;
+      color: $dark;
       padding-top: 10px;
     }
   }
@@ -154,7 +154,7 @@ article {
 
     .btn {
       width: 80px;
-      border: 2px solid #ebf2f7;
+      border: 2px solid $light;
       background-color: transparent;
       color: white;
       margin-left: 10px;
@@ -176,7 +176,7 @@ footer {
     color: $secondary;
   }
   p {
-    color: #06283d;
+    color: $dark;
     font-size: 1.2rem;
   }
   i {
